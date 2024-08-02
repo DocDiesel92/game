@@ -12,9 +12,9 @@
 @font-face {
     font-family: 'Museo Sans Light';
     src: local('Museo Sans'),
-    url('/assets/fonts/MuseoSansLight.woff') format('woff'), 
-    url('/assets/fonts/MuseoSansLight.ttf') format('ttf'),
-    url('/assets/fonts/MuseoSansLight.eot') format('eot');
+    url('assets/fonts/MuseoSansLight.woff') format('woff'), 
+    url('assets/fonts/MuseoSansLight.ttf') format('ttf'),
+    url('assets/fonts/MuseoSansLight.eot') format('eot');
 }
 
 body {
