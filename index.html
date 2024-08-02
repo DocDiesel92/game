@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <link rel="stylesheet" href="reset.css  ">
+    <link rel="stylesheet" href="style.css">
+    <title>Crypto World</title>
+</head>
+<body>
+    <div class="wrapper-screen ">
+        <div class="logo "></div>
+        <div class="screen first-reg-join-accept ">
+            <button class="btn screen-btn-reg btn-active">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+            <button class="btn screen-btn-join">ВОЙТИ</button>
+            <p class="screen-p-accept">
+                By continuing you accept our <br>
+                <a href="">Terms of Service</a> and <a href="">Privacy Policy</a>
+            </p>
+        </div>
+        <div class="screen second-reg hidden">
+            <input type="text" class="input input-email" placeholder="EMAIL" tabindex="1">
+            <input type="text" class="input input-password" placeholder="ПАРОЛЬ" tabindex="2">
+            <input type="text" class="input input-r-password" placeholder="ПОДТВЕРДИТЬ ПАРОЛЬ" tabindex="3">
+            <button class="btn second-btn-reg btn-active">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+        </div>
+        <div class="screen second-join hidden">
+            <input type="text" class="input input-join-email" placeholder="EMAIL" tabindex="1">
+            <input type="text" class="input input-join-password" placeholder="ПАРОЛЬ" tabindex="2">
+            <button class="btn second-btn-join btn-active">ВОЙТИ</button>
+            <p class="p-forgot-p">Забыли пароль?</p>
+        </div>
+        <div class="screen screen-welcome hidden">
+            <span class="span-welcome">Добро пожаловать!</span>
+        </div>
+    </div>
+    <div class="wrapper-game hidden">
+        <div class="bank-wallet">
+            <div class="bank-home"></div>
+            <div class="wallet">
+                <div class="wallet-popup-block hidden"></div>
+            </div>
+        </div>
+        <button class="btn-claim hidden">CLAIM</button>
+        <button class="btn-go-to-city hidden">GO TO <br> CITY</button>
+        <div class="map ">
+            <div class="map-city">
+                <div class="edifice group" id="Дом"></div>
+                <div class="edifice investment" id="Инвестиции"></div>
+                <div class="edifice media" id="СМИ"></div>
+                <div class="edifice bank" id="Банк"></div>
+                <div class="edifice casino" id="Казино"></div>
+                <div class="edifice market" id="Рынок"></div>
+                <div class="edifice lottery" id="Лотерея"></div>
+            </div>
+            <div class="map-hotel">
+                <div class="edifice-hotel"></div>
+            </div>
+        </div>
+        <div class="navigation">
+            <div class="nav nav-home">
+                <img src="assets//icon/home.png" alt="" class="img-home">
+                Home
+            </div>
+            <div class="nav nav-portfolio">
+                <img src="assets//icon/portfolio.png" alt="" class="img-portfolio">
+                Portfolio
+            </div>
+            <div class="nav nav-rewards">
+                <img src="assets//icon/rewards.png" alt="" class="img-rewards">
+                Rewards
+            </div>
+            <div class="nav nav-market">
+                <img src="assets//icon/market.png" alt="" class="img-market">
+                Market
+            </div>
+            <div class="nav nav-profile">
+                <img src="assets//icon/profile.png" alt="" class="img-profile">
+                Profile
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

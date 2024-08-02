@@ -1,0 +1,406 @@
+@media screen and (orientation: landscape) {
+    html {
+        transform: rotate(-90deg);
+        transform-origin: left top;
+        width: 100vh;
+        overflow-x: hidden;
+        position: absolute;
+        top: 100%;
+        left: 0;
+    }
+}
+@font-face {
+    font-family: 'Museo Sans Light';
+    src: local('Museo Sans'),
+    url('/assets/fonts/MuseoSansLight.woff') format('woff'), 
+    url('/assets/fonts/MuseoSansLight.ttf') format('ttf'),
+    url('/assets/fonts/MuseoSansLight.eot') format('eot');
+}
+
+body {
+    font-family: 'Museo Sans Light';
+}
+
+.wrapper-screen {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    background: url('assets/bg-main.png') no-repeat center center / cover;
+}
+
+.logo {
+    width: 168px;
+    min-width: 168px;
+    height: 168px;
+    min-height: 168px;
+    border: 0px solid goldenrod;
+    border-radius: 50%;
+    box-shadow: 0px 0px 50px 10px goldenrod;
+}
+
+.screen {
+    position: relative;
+    padding: 0 25px;
+    width: 100%;
+    height: 55%;
+}
+
+.first-reg-join-accept {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn {
+    width: 100%;
+    height: 56px;
+    border: 1px solid whitesmoke;
+    border-radius: 28px;
+    font-size: 16px;
+    color: whitesmoke;
+    letter-spacing: 2px;
+}
+
+.screen-btn-reg {
+    margin-top: 94px;
+    margin-bottom: 20px;
+}
+
+.screen-p-accept {
+    position: absolute;
+    bottom: 25px;
+    text-align: center;
+    color: whitesmoke;
+    letter-spacing: 2px;
+}
+
+.input {
+    width: 100%;
+    height: 56px;
+    text-align: center;
+    border: 1px solid whitesmoke;
+    border-radius: 28px;
+    font-size: 16px;
+    color: whitesmoke;
+    letter-spacing: 2px;
+}
+
+.input::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.58);
+}
+
+.input-email {
+    margin-top: 23px;
+    margin-bottom: 20px;
+}
+
+.input-password {
+    margin-bottom: 20px;
+}
+
+.input-r-password {
+    margin-bottom: 42px;
+}
+
+.second-join {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-join-email {
+    margin-top: 94px;
+    margin-bottom: 20px;
+}
+
+.input-join-password {
+    margin-bottom: 42px;
+}
+
+.second-btn-join {
+    margin-bottom: 11px;
+}
+
+.p-forgot-p {
+    color: whitesmoke;
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+
+.screen-welcome {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 2s linear;
+}
+
+.span-welcome {
+    opacity: 0;
+    font-size: 30px;
+    letter-spacing: 2px;
+    color: whitesmoke;
+    font-weight: bold;
+    transition: 2s linear;
+}
+
+@keyframes faded {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.wrapper-game {
+    opacity: 0;
+    padding: 0 33px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgb(15, 17, 54) url('assets/bg-game.png') no-repeat center -6px / cover;
+}
+
+@keyframes show-game {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.bank-wallet {
+    position: absolute;
+    padding: 0 32px;
+    width: 100%;
+    height: 52px;
+    top: 10px;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+}
+
+.bank-home {
+    width: 50px;
+    height: 50px;
+    background: url('assets/icon/Bank.png') no-repeat center center / contain;
+}
+
+.wallet {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background: url('assets/icon/wallet.png') no-repeat center -3px / contain;
+}
+
+.wallet-popup {
+    background: url('assets/icon/wallet-popup.png') no-repeat center 0px / contain;
+}
+
+.wallet-popup-block {
+    position: absolute;
+    left: -40px;
+    top: 55px;
+    width: 88px;
+    height: 72px;
+    background: rgb(65, 55, 43);
+    border: 1px solid goldenrod;
+    border-radius: 6px;
+}
+
+.btn-claim {
+    width: 100%;
+    height: 56px;
+    font-size: 16px;
+    color: black;
+    background: whitesmoke;
+    border-radius: 28px;
+    letter-spacing: 4px;
+    font-weight: bold;
+}
+
+.btn-go-to-city {
+    position: absolute;
+    bottom: 90px;
+    right: -112px;
+    width: 148px;
+    height: 148px;
+    background: goldenrod;
+    border-radius: 50%;
+    box-shadow: 0px 0px 50px 30px goldenrod;
+    color: whitesmoke;
+    font-size: 21px;
+    text-align: center;
+    letter-spacing: 2px;
+    transition: 0.5s linear;
+    animation: pulse 1s linear infinite;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0px 0px 50px 30px goldenrod; 
+    }
+    100% {
+        box-shadow: 0px 0px 50px 40px goldenrod; 
+    }
+}
+
+.navigation {
+    position: absolute;
+    bottom: 15px;
+    padding: 0 41px;
+    width: 100%;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    letter-spacing: 1px;
+    color: whitesmoke;
+}
+
+.nav:first-child {
+    color:rgba(145, 5, 255, 1);
+}
+
+.nav > img {
+    padding-bottom: 2px;
+}
+
+.map {
+    position: absolute;
+    width: 200%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    transition: 0.5s linear;
+}
+
+.map-city {
+    width: 50%;
+    height: 100%;
+    background:rgb(33, 20, 100) url('assets/city/bg-city.png') no-repeat center -5px / cover;
+}
+
+.map-hotel {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background: rgb(122, 6, 165);
+
+}
+
+.edifice-hotel {
+    position: absolute;
+    left: 350px;
+    width: 574px;
+    height: 513px;
+    background: url('assets/city/hotel.png') no-repeat center center / cover;
+}
+
+.edifice {
+    padding-bottom: 7%;
+    position: absolute;
+    transition: 0.5s linear;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    color: whitesmoke;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.group {
+    top: 10%;
+    width: 280px;
+    height: 280px;
+    background: url('assets/city/group.png') no-repeat center center / contain;
+}
+
+.bank {
+    top: 20%;
+    left: 31%;
+    width: 159px;
+    height: 261px;
+    background: url('assets/city/bank.png') no-repeat center center / contain;
+}
+
+.media {
+    top: 42%;
+    left: 16%;
+    width: 173px;
+    height: 258px;
+    background: url('assets/city/media.png') no-repeat center center / contain;
+}
+
+.investment {
+    top: 51%;
+    left: 1%;
+    width: 128px;
+    height: 221px;
+    background: url('assets/city/investment.png') no-repeat center center / contain;
+}
+
+.casino {
+    top: 76%;
+    left: 6%;
+    width: 123px;
+    height: 140px;
+    background: url('assets/city/casino.png') no-repeat center center / contain;
+}
+
+.market {
+    top: 76%;
+    left: 20%;
+    width: 123px;
+    height: 140px;
+    background: url('assets/city/market.png') no-repeat center center / contain;
+}
+
+.lottery {
+    top: 71%;
+    left: 35%;
+    width: 123px;
+    height: 140px;
+    background: url('assets/city/lottery.png') no-repeat center center / contain;
+}
+
+.edifice-active {
+    transform: scale(1.2);
+}
+
+.btn-active {
+    border: unset;
+    background: linear-gradient(180deg, #9105FF 0%, #570399 100%);
+}
+
+.hidden {
+    display: none;
+}
